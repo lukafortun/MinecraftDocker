@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-./generate-properties.sh
+/utils/generate-properties.sh
 
 
 VERSION_FILE="server.version"
