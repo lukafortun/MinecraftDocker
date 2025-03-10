@@ -7,7 +7,7 @@
 VERSION_FILE="server.version"
 CURRENT_VERSION="${SERVER_TYPE}-${MC_VERSION}"
 if [ ! -f server.jar ] || [ ! -f "$VERSION_FILE" ] || [ "$(cat $VERSION_FILE)" != "$CURRENT_VERSION" ]; then
-    echo "Téléchargement du serveur..."
+    echo "Downloading server..."
     [ -f server.jar ] && rm server.jar
     if [ "$SERVER_TYPE" = "paper" ]; then
         /utils/lts-paper.sh "$MC_VERSION"
@@ -18,13 +18,13 @@ if [ ! -f server.jar ] || [ ! -f "$VERSION_FILE" ] || [ "$(cat $VERSION_FILE)" !
     elif [ "$SERVER_TYPE" = "forge" ]; then
         /utils/lts-forge.sh "$MC_VERSION"
     else
-        echo "Type de serveur invalide"
+        echo "Server type is invalid"
         exit 1
     fi
     
     echo "$CURRENT_VERSION" > "$VERSION_FILE"
 else
-    echo "Serveur déjà présent, démarrage..."
+    echo "Server already downloaded, starting..."
 fi
 
 # Accepter le EULA
