@@ -14,6 +14,12 @@ This Docker image features 4 server versions :
 
 
 
+Configure `server.properties` using environment variables:
+```bash
+WHITE_LIST=true <=> white-list=true
+
+```
+
 
 
 
