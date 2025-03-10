@@ -31,6 +31,6 @@ fi
 echo "eula=true" > eula.txt
 
 # Lancer le serveur Minecraft
-echo "Lancement du serveur Minecraft avec $MEMORY_MIN - $MEMORY_MAX de mémoire"
+echo "Starting Minecraft server with $MEMORY_MIN - $MEMORY_MAX memory"
 java -Xms$MEMORY_MIN -Xmx$MEMORY_MAX -jar server.jar nogui
 
