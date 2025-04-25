@@ -12,9 +12,10 @@ This Docker image features 4 server versions :
 
 ## Usage
 
+To get started with the project you can simply use the preconfigured docker-compose.yml file and copy the example .env file.
 
 
-Configure `server.properties` using environment variables:
+Configure `server.properties` using environment variables (in the .env for examplee):
 ```bash
 WHITE_LIST=true <=> white-list=true
 
